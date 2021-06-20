@@ -1,18 +1,21 @@
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
-		import { createUseStyles } from 'react-jss';
 
-		const useStyles = createUseStyles({
-			buttons: {
-				display: 'flex',
-			},
-			button: {
-				margin: 5,
-				'&:hover': {
-				backgroundColor: 'blue',
-				},
-			},
-		});
+
+import { createUseStyles } from 'react-jss';
+
+const useStyles = createUseStyles({
+	buttons: {
+		display: 'flex',
+	},
+	button: {
+		margin: 5,
+		'&:hover': {
+		backgroundColor: 'blue',
+		},
+	},
+});
+
 
 const FeedbackOptions = ({ todos, onLeaveFeedback }) => {
 	 const classes = useStyles();
